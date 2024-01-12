@@ -32,23 +32,23 @@ export const Default = (props: ComponentProps): JSX.Element => {
     props.params.Styles8,
   ];
   let enabledColumns = Number.parseInt(props.params.EnabledColumns);
-	if(isNaN(enabledColumns)) {
-		enabledColumns = 1;
-	}
-	const gap = props.params.Gap;
-	const enabledColIndexes = [...Array(enabledColumns).keys()];
+  if (isNaN(enabledColumns)) {
+    enabledColumns = 1;
+  }
+  const gap = props.params.Gap;
+  const enabledColIndexes = [...Array(enabledColumns).keys()];
 
   const id = props.params.RenderingIdentifier;
 
   return (
-    <div style={{width: "100%", gap}}  className={`layout-container`} id={id ? id : undefined}>
+    <div style={{ width: '100%', gap }} className={`layout-container`} id={id ? id : undefined}>
       {enabledColIndexes.map((index) => {
-        const phKey = `column-${index+1}-{*}`;				
+        const phKey = `column-${index + 1}-{*}`;
         const phStyles = `${columnStyles[index] ?? ''}`.trimEnd();
         const columnClass = columnClasses[index];
 
         return (
-          <div key={index+1} className={`${phStyles} ${columnClass} layout-column`}>
+          <div key={index + 1} className={`${phStyles} ${columnClass} layout-column`}>
             <div key={index} className="">
               <Placeholder key={index} name={phKey} rendering={props.rendering} />
             </div>
