@@ -11,6 +11,7 @@ interface ComponentProps {
 }
 
 export const Default = (props: ComponentProps): JSX.Element => {
+
   const columnClasses = [
     props.params.Column1Classes,
     props.params.Column2Classes,
@@ -21,40 +22,40 @@ export const Default = (props: ComponentProps): JSX.Element => {
     props.params.Column7Classes,
     props.params.Column8Classes,
   ];
-  const columnStyles = [
-    props.params.Styles1,
-    props.params.Styles2,
-    props.params.Styles3,
-    props.params.Styles4,
-    props.params.Styles5,
-    props.params.Styles6,
-    props.params.Styles7,
-    props.params.Styles8,
-  ];
+
+  const styles = JSON.parse(props.params.ContainerStyles ?? "{}") as Record<string, any>;
+	const columnStyles = JSON.parse(props.params.ColumnStyles ?? "[]") as Array<Record<string, any>>;
+
+
   let enabledColumns = Number.parseInt(props.params.EnabledColumns);
   if (isNaN(enabledColumns)) {
     enabledColumns = 1;
   }
-  const gap = props.params.Gap;
   const enabledColIndexes = [...Array(enabledColumns).keys()];
 
   const id = props.params.RenderingIdentifier;
 
   return (
-    <div style={{ width: '100%', gap }} className={`layout-container`} id={id ? id : undefined}>
-      {enabledColIndexes.map((index) => {
-        const phKey = `column-${index + 1}-{*}`;
-        const phStyles = `${columnStyles[index] ?? ''}`.trimEnd();
-        const columnClass = columnClasses[index];
+    <div style={{width: '100%'}}>
+      <div
+        style={styles}
+        className={`layout-container`}
+        id={id ? id : undefined}
+      >
+        {enabledColIndexes.map((index) => {
+          const phKey = `column-${index + 1}-{*}`;
+          const columnClass = columnClasses[index];
+					const columnStyle = columnStyles[index];
 
-        return (
-          <div key={index + 1} className={`${phStyles} ${columnClass} layout-column`}>
-            <div key={index} className="">
-              <Placeholder key={index} name={phKey} rendering={props.rendering} />
+          return (
+            <div key={index + 1} className={`${columnClass} layout-column`}>
+              <div key={index} className={`layout-column-content ${columnStyle}`}>
+                <Placeholder key={index} name={phKey} rendering={props.rendering} />
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };
