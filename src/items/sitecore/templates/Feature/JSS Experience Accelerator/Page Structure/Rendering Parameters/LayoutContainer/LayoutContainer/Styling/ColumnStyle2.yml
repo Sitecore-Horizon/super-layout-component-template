@@ -1,15 +1,18 @@
 ﻿---
-ID: "451c0859-430c-46b0-a42d-7b55f99d9a58"
-Parent: "fa1a92ce-085b-4dad-b780-6c40e2c39fc4"
+ID: "5e1106b8-9c28-4649-8b40-440d285b8aa5"
+Parent: "1b3f36f6-7219-428f-8513-ee20f75936de"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer/Grid/ColumnClasses7
+Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer/Styling/ColumnStyle2
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: 
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 99
+  Value: 75
 - ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
   Hint: Shared
   Value: 1
@@ -18,10 +21,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Spalte 7 Layout
+    Value: Stile für Spalt 2
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Spaltenbreite7
+    Value: Styles2
   Versions:
   - Version: 1
     Fields:
@@ -50,7 +53,7 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Column 7 layout
+    Value: Styles for column 2
   Versions:
   - Version: 1
     Fields:
@@ -59,7 +62,7 @@ Languages:
       Value: 20111202T144600
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c618c444-5b39-4e7d-8525-10d571a94d7f"
+      Value: "c198d624-06e4-42ff-bc55-850e8872aea4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -71,10 +74,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 列７レイアウト
+    Value: 列２のスタイル
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 列幅7
+    Value: スタイル2
   Versions:
   - Version: 1
     Fields:
@@ -103,10 +106,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 列7布局
+    Value: 第2列的样式
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 列宽7
+    Value: 样式2
   Versions:
   - Version: 1
     Fields:

@@ -1,8 +1,8 @@
 ﻿---
-ID: "0bddcf2f-8153-492e-aa79-1d0211311ae1"
+ID: "48da63b7-105f-4a02-b229-42f96a996db0"
 Parent: "1b3f36f6-7219-428f-8513-ee20f75936de"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer/Styling/Styles5
+Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer/Styling/ColumnStyle7
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
@@ -12,7 +12,7 @@ SharedFields:
   Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 96
+  Value: 99
 - ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
   Hint: Shared
   Value: 1
@@ -21,10 +21,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Stile für Spalt 5
+    Value: Stile für Spalt 7
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Styles5
+    Value: Styles7
   Versions:
   - Version: 1
     Fields:
@@ -53,7 +53,7 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Styles for column 5
+    Value: Styles for column 7
   Versions:
   - Version: 1
     Fields:
@@ -62,7 +62,7 @@ Languages:
       Value: 20111202T144600
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6d2b32e8-c2ac-4b59-826e-69c36b96a9f6"
+      Value: "f854c9ab-f64c-45a7-b7b8-842186919c44"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -74,10 +74,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 列５のスタイル
+    Value: 列７のスタイル
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: スタイル5
+    Value: スタイル7
   Versions:
   - Version: 1
     Fields:
@@ -106,10 +106,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 第5列的样式
+    Value: 第7列的样式
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 样式5
+    Value: 样式7
   Versions:
   - Version: 1
     Fields:

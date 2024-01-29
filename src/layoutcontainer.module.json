@@ -9,6 +9,11 @@
             "scope":"ItemAndDescendants"
           },
           {
+            "name":"sitecore/layout/Placeholder Settings/Feature/JSS Experience Accelerator/Page Structure/LayoutContainer",
+            "path":"/sitecore/layout/Placeholder Settings/Feature/JSS Experience Accelerator/Page Structure/LayoutContainer",
+            "scope":"ItemAndDescendants"
+          },
+          {
             "name":"sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer",
             "path":"/sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer",
             "scope":"ItemAndDescendants"

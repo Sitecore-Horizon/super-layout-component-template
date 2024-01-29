@@ -1,44 +1,30 @@
 ﻿---
-ID: "2c3f134c-598d-4e2d-87f4-08b0eb0d5c3e"
-Parent: "85dabd6d-9c7d-4249-9e84-25c0f657b7e2"
-Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Page Structure/LayoutContainer
+ID: "e657f0cb-0102-4b5a-b1ea-124c4da1bfd0"
+Parent: "1b3f36f6-7219-428f-8513-ee20f75936de"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Structure/Rendering Parameters/LayoutContainer/Styling/ColumnStyle3
 SharedFields:
-- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
-  Hint: componentName
-  Value: LayoutContainer
-- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
-  Hint: Placeholders
-  Value: |
-    {B08813A4-E3F1-4027-8FBC-CB814367F94F}
-    {A0D32BB8-1E57-4BB5-9779-D84D46F3F982}
-    {0B2CDE42-8259-427D-BCA9-F68ADC1232B7}
-    {AA0F90C3-2279-41E7-A1F4-5A33FB2FE655}
-    {4F632946-906E-41A4-8BD6-42E652AA7338}
-    {54A7FA7E-D78C-4170-8680-1D8598219812}
-    {0648AD42-3E68-4CFC-B5E0-963B9B29405A}
-    {8705D789-ECFC-42CD-835B-5C1631CC140F}
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: Office/32x32/layout.png
-- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
-  Hint: Open Properties after Add
-  Value: 0
-- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
-  Hint: Page Editor Buttons
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
   Value: 
-- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
-  Hint: Parameters Template
-  Value: "{C32F4BED-B84C-495B-8F6A-3B46D5F141A6}"
-- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
-  Hint: OtherProperties
-  Value: IsRenderingsWithDynamicPlaceholders=true&IsColumnSplitterRendering=true
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 87
+- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
+  Hint: Shared
+  Value: 1
 Languages:
 - Language: "de-DE"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Stile für Spalt 3
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: SpalteSplitter
+    Value: Styles3
   Versions:
   - Version: 1
     Fields:
@@ -64,31 +50,34 @@ Languages:
       Hint: __Updated
       Value: 20231204T130641Z
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Styles for column 3
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220202T150344Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20111202T144600
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b20d0b00-1c15-4177-ae20-b2f37d1fcf1b"
+      Value: "4463cfa3-4fe5-4ff0-a69d-6a68eb82824a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\stanislav.maxymov@sitecore.com
+        sitecore\X9vkjbYc5c
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240126T130935Z
+      Value: 20231206T140902Z
 - Language: "ja-JP"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: 列３のスタイル
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 列スプリッタ―
+    Value: スタイル3
   Versions:
   - Version: 1
     Fields:
@@ -115,9 +104,12 @@ Languages:
       Value: 20231204T130641Z
 - Language: "zh-CN"
   Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: 第3列的样式
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 列分离器
+    Value: 样式3
   Versions:
   - Version: 1
     Fields:
