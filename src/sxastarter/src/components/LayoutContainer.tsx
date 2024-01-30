@@ -64,10 +64,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   
   return (
-    <div style={{width: '100%'}}>
+    <div style={{width: '100%'}} className='layout-container-wrapper'>
       <div
         style={containerStyles}
-        className={`layout-container`}
+        className='layout-container'
         id={id ? id : undefined}
       >
         {enabledColIndexes.map((index) => {

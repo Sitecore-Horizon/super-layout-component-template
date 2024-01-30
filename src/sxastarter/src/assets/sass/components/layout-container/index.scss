@@ -1,7 +1,13 @@
+.layout-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .layout-container {
   display: flex;
   flex-direction: row;
-    
+
   .layout-column {
     flex-grow: 0;
     flex-shrink: 1;
