@@ -50,7 +50,7 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Column 4 layout
+    Value: Column 4 size
   Versions:
   - Version: 1
     Fields:
@@ -59,14 +59,14 @@ Languages:
       Value: 20111202T144600
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6190300b-f461-4409-9b0a-ed91f362b6d8"
+      Value: "2b5c81cb-5589-4d7c-bfef-bc7212d124af"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\X9vkjbYc5c
+        sitecore\stanislav.maxymov@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20231206T140902Z
+      Value: 20240202T105831Z
 - Language: "ja-JP"
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"

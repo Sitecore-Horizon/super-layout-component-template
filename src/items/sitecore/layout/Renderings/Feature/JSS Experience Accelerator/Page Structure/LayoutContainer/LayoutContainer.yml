@@ -32,7 +32,7 @@ SharedFields:
   Value: "{C32F4BED-B84C-495B-8F6A-3B46D5F141A6}"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
-  Value: IsRenderingsWithDynamicPlaceholders=true&IsColumnSplitterRendering=true
+  Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: "de-DE"
   Fields:
@@ -64,6 +64,10 @@ Languages:
       Hint: __Updated
       Value: 20231204T130641Z
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Layout Container
   Versions:
   - Version: 1
     Fields:
@@ -76,14 +80,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b20d0b00-1c15-4177-ae20-b2f37d1fcf1b"
+      Value: "8bd231f9-750f-44a7-b5a7-6d25ffad37d0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\stanislav.maxymov@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240126T130935Z
+      Value: 20240202T113623Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

@@ -23,43 +23,25 @@ export function parseInlineStyles(styles: string | undefined): Record<string,str
   return styleObject;
 }
 
-
 export const Default = (props: ComponentProps): JSX.Element => {
-
-  const columnSizes = [
-    props.params.ColumnSize1,
-    props.params.ColumnSize2,
-    props.params.ColumnSize3,
-    props.params.ColumnSize4,
-    props.params.ColumnSize5,
-    props.params.ColumnSize6,
-    props.params.ColumnSize7,
-    props.params.ColumnSize8,
-  ];
-
-  const columnStyles = [
-    props.params.ColumnStyle1,
-    props.params.ColumnStyle2,
-    props.params.ColumnStyle3,
-    props.params.ColumnStyle4,
-    props.params.ColumnStyle5,
-    props.params.ColumnStyle6,
-    props.params.ColumnStyle7,
-    props.params.ColumnStyle8,
-  ];
-
-  const containerStyles =  parseInlineStyles(props.params.ContainerStyles);
-  let enabledColumns = Number.parseInt(props.params.EnabledColumns);
-
+	let enabledColumns = Number.parseInt(props.params.EnabledColumns);
   if (isNaN(enabledColumns)|| enabledColumns < 1) {
     enabledColumns = 1;
   }
+	const enabledColIndexes = [...Array(enabledColumns).keys()];
+
+  const columnSizes = enabledColIndexes.map((i)=> props.params[`ColumnSize${i+1}`]);
+
+  const columnStyles = enabledColIndexes.map((i)=> props.params[`ColumnStyle${i+1}`]);
+
+  const containerStyles =  parseInlineStyles(props.params.ContainerStyles);
+  if(!containerStyles.width){
+      containerStyles.width = '100%';
+  }  
 
   if(enabledColumns === 1 && !columnSizes[0]){
     columnSizes[0] = 'basis-full';
   }
-
-  const enabledColIndexes = [...Array(enabledColumns).keys()];
 
   const id = props.params.RenderingIdentifier;
   

@@ -23,14 +23,14 @@ Languages:
       Value: 20130304T135400Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e56674b2-bcbd-4b0c-b55e-8e34dee99e19"
+      Value: "90221f47-34ed-4654-8ec7-f0923dfb2cd3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\stanislav.maxymov@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240128T151153Z
+      Value: 20240202T103923Z
     - ID: "e6442242-557d-4704-9038-8184fe6e31f7"
       Hint: ContainerStyles
-      Value: "gap: 10px;"
+      Value: "gap: 10px; width: 100%"
