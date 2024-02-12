@@ -40,22 +40,23 @@ export const Default = (props: ComponentProps): JSX.Element => {
   }
 
   if (enabledColumns === 1 && !columnSizes[0]) {
-    columnSizes[0] = 'basis-full';
+    columnSizes[0] = 'slc-basis-full';
   }
 
   const id = props.params.RenderingIdentifier;
 
   return (
-    <div style={{ width: '100%' }} className="layout-container-wrapper">
-      <div style={containerStyles} className="layout-container" id={id ? id : undefined}>
+    <div style={{ width: '100%' }} className="slc-layout-container-wrapper">
+      <div style={containerStyles} className="slc-layout-container" id={id ? id : undefined}>
         {enabledColIndexes.map((index) => {
           const phKey = `layout-column-${index + 1}-{*}`;
-          const columnClass = columnSizes[index] ?? '';
-          const columnStyle = columnStyles[index] ?? '';
+					const prefix = 'slc'
+          const columnClass = `${prefix}-${columnSizes[index]}`;
+          const columnStyle = `${prefix}-${columnStyles[index]}`;
 
           return (
-            <div key={index + 1} className={`${columnClass} layout-column`}>
-              <div key={index + 1} className={`layout-column-content ${columnStyle}`}>
+            <div key={index + 1} className={`${columnClass} slc-layout-column`}>
+              <div key={index + 1} className={`slc-layout-column-content ${columnStyle}`}>
                 <Placeholder key={index} name={phKey} rendering={props.rendering} />
               </div>
             </div>
