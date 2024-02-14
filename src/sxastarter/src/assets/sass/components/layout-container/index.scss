@@ -1,0 +1,132 @@
+.slc-layout-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slc-layout-container {
+  display: flex;
+  flex-direction: row;
+
+  .slc-layout-column {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  .slc-basis-full {
+    flex-basis: 100%;
+  }
+
+  .slc-basis-1-2 {
+    flex-basis: 50%;
+  }
+
+  .slc-basis-1-3 {
+    flex-basis: 33.333333%;
+  }
+
+  .slc-basis-2-3 {
+    flex-basis: 66.666667%;
+  }
+
+  .slc-basis-1-4 {
+    flex-basis: 25%;
+    width: 25%;
+  }
+
+  .slc-basis-2-4 {
+    flex-basis: 50%;
+  }
+
+  .slc-basis-3-4 {
+    flex-basis: 75%;
+  }
+
+  .slc-basis-1-5 {
+    flex-basis: 20%;
+  }
+
+  .slc-basis-2-5 {
+    flex-basis: 40%;
+  }
+
+  .slc-basis-3-5 {
+    flex-basis: 60%;
+  }
+
+  .slc-basis-4-5 {
+    flex-basis: 80%;
+  }
+
+  .slc-basis-1-6 {
+    flex-basis: 16.666667%;
+  }
+
+  .slc-basis-2-6 {
+    flex-basis: 33.333333%;
+  }
+
+  .slc-basis-3-6 {
+    flex-basis: 50%;
+  }
+
+  .slc-basis-4-6 {
+    flex-basis: 66.666667%;
+  }
+
+  .slc-basis-5-6 {
+    flex-basis: 83.333333%;
+  }
+
+  .slc-layout-column-content {
+    display: flex;
+    height: 100%;
+  }
+
+  .slc-flex-row {
+    flex-direction: row;
+  }
+
+  .slc-flex-col {
+    flex-direction: column;
+  }  
+
+  .slc-items-start {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .slc-items-center {
+    align-items: center;
+    align-content: center;
+  }
+
+  .slc-items-end {
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .slc-justify-distributed {
+    justify-content: space-between;
+  }
+
+  .slc-justify-start {
+    justify-content: flex-start;
+  }
+
+  .slc-justify-center {
+    justify-content: center;
+  }
+
+  .slc-justify-end {
+    justify-content: flex-end;
+  }
+
+  .slc-wrap {
+    flex-wrap: wrap;
+  }
+
+  .slc-no-wrap {
+    flex-wrap: nowrap;
+  }
+}
