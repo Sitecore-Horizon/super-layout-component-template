@@ -50,9 +50,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div style={containerStyles} className="slc-layout-container" id={id ? id : undefined}>
         {enabledColIndexes.map((index) => {
           const phKey = `layout-column-${index + 1}-{*}`;
-					const prefix = 'slc'
+          const prefix = 'slc';
           const columnClass = `${prefix}-${columnSizes[index]}`;
-          const columnStyle = (columnStyles[index] ?? '').split(' ').map(style => `${prefix}-${style}`).join(' ');
+          const columnStyle = (columnStyles[index] ?? '')
+            .split(' ')
+            .map((style) => `${prefix}-${style}`)
+            .join(' ');
 
           return (
             <div key={index + 1} className={`${columnClass} slc-layout-column`}>
