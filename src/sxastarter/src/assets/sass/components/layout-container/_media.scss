@@ -1,0 +1,42 @@
+// Breakpoints variables
+$breakpoints-sm: 370px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 1024px;
+$breakpoints-xl: 1280px;
+$breakpoints-xxl: 1536px;
+
+// Media queries
+@media only screen and (max-width: $breakpoints-sm) {
+  .slc-breakpoints-sm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width:calc(#{$breakpoints-sm + 1})) and (max-width: $breakpoints-md) {
+  .slc-breakpoints-md {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width:calc(#{$breakpoints-md + 1})) and (max-width: $breakpoints-lg) {
+  .slc-breakpoints-lg {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width:calc(#{$breakpoints-lg + 1})) and (max-width: $breakpoints-xl) {
+  .slc-breakpoints-xl {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width:calc(#{$breakpoints-xg + 1})) and (max-width: $breakpoints-xxl) {
+  .slc-breakpoints-xxl {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
