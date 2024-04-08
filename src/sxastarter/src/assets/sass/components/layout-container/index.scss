@@ -1,4 +1,5 @@
 @import '_variables.scss';
+@import '_functions.scss';
 
 .slc-layout-container-wrapper {
   display: flex;
@@ -129,5 +130,17 @@
 
   .slc-no-wrap {
     flex-wrap: nowrap;
+  }
+}
+
+@each $breakpoint, $value in $slc-grid-breakpoints {
+  $infix: breakpoint-infix($breakpoint, $slc-grid-breakpoints);
+
+  @if ($infix != '') {
+    @media only screen and (max-width: $value) {
+      .slc#{$infix}-stack {
+        flex-direction: column;
+      }
+    }
   }
 }
