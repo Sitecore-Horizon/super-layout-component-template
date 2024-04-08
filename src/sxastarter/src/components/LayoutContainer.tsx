@@ -51,6 +51,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const stackAtBreakpoint = props.params.StackColumnAt;
   if (stackAtBreakpoint !== 'never') {
     columnStackClass = `${prefix}-${stackAtBreakpoint}-stack`;
+  } else {
+    columnStackClass = '';
   }
 
   return (
