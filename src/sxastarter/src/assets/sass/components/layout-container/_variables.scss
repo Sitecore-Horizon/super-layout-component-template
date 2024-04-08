@@ -1,0 +1,22 @@
+@import '_function.scss';
+
+$slc-grid-breakpoints: (
+  xs: 0,
+  sm: 370px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+) !default;
+
+@each $breakpoint, $value in $slc-grid-breakpoints {
+  $infix: breakpoint-infix($breakpoint, $slc-grid-breakpoints);
+
+  @if ($infix != '') {
+    @media only screen and (max-width: $value) {
+      .slc#{$infix}-stack {
+        flex-direction: column;
+      }
+    }
+  }
+}

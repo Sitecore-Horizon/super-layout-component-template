@@ -10,7 +10,6 @@ interface ComponentProps {
   params: ComponentParams;
 }
 
-type BreakpointKeys = 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 const prefix = 'slc';
 
 export function parseInlineStyles(styles: string | undefined): Record<string, string> {
@@ -24,21 +23,6 @@ export function parseInlineStyles(styles: string | undefined): Record<string, st
   });
 
   return styleObject;
-}
-
-export function parseBreakpointsClass(size: number): string {
-  const breakpoints: Record<BreakpointKeys, number> = {
-    sm: 370,
-    md: 768,
-    lg: 1024,
-    xl: 1280,
-    xxl: 1536,
-  };
-
-  const breakpoint = Object.keys(breakpoints).find(
-    (key: BreakpointKeys) => breakpoints[key] >= size
-  );
-  return breakpoint ? `${prefix}-breakpoints-${breakpoint}` : '';
 }
 
 export const Default = (props: ComponentProps): JSX.Element => {
@@ -63,15 +47,17 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   const id = props.params.RenderingIdentifier;
 
-  const stackColumnAt = props.params.StackColumnAt;
-  const breakpointsClass =
-    stackColumnAt === 'never' ? '' : parseBreakpointsClass(Number.parseInt(stackColumnAt));
+  let columnStackClass = '';
+  const stackAtBreakpoint = props.params.StackColumnAt;
+  if (stackAtBreakpoint !== 'never') {
+    columnStackClass = `${prefix}-${stackAtBreakpoint}-stack`;
+  }
 
   return (
     <div style={{ width: '100%' }} className="slc-layout-container-wrapper">
       <div
         style={containerStyles}
-        className={`slc-layout-container ${breakpointsClass}`}
+        className={`slc-layout-container ${columnStackClass}`}
         id={id ? id : undefined}
       >
         {enabledColIndexes.map((index) => {
