@@ -10,6 +10,8 @@ interface ComponentProps {
   params: ComponentParams;
 }
 
+const prefix = 'slc';
+
 export function parseInlineStyles(styles: string | undefined): Record<string, string> {
   const stylePairs = styles?.split(';') ?? [];
   const styleObject: Record<string, string> = {};
@@ -45,12 +47,24 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   const id = props.params.RenderingIdentifier;
 
+  let columnStackClass = '';
+  const stackAtBreakpoint = props.params.StackColumnAt;
+
+  if (stackAtBreakpoint && stackAtBreakpoint !== 'never') {
+    columnStackClass = `${prefix}-${stackAtBreakpoint}-stack`;
+  } else {
+    columnStackClass = '';
+  }
+
   return (
     <div style={{ width: '100%' }} className="slc-layout-container-wrapper">
-      <div style={containerStyles} className="slc-layout-container" id={id ? id : undefined}>
+      <div
+        style={containerStyles}
+        className={`slc-layout-container ${columnStackClass}`}
+        id={id ? id : undefined}
+      >
         {enabledColIndexes.map((index) => {
           const phKey = `layout-column-${index + 1}-{*}`;
-          const prefix = 'slc';
           const columnClass = `${prefix}-${columnSizes[index]}`;
           const columnStyle = (columnStyles[index] ?? '')
             .split(' ')

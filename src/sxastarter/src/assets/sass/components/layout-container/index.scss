@@ -1,3 +1,6 @@
+@import '_variables.scss';
+@import '_functions.scss';
+
 .slc-layout-container-wrapper {
   display: flex;
   flex-direction: row;
@@ -6,7 +9,6 @@
 
 .slc-layout-container {
   display: flex;
-  flex-direction: row;
 
   .slc-layout-column {
     flex-grow: 0;
@@ -89,7 +91,7 @@
 
   .slc-flex-col {
     flex-direction: column;
-  }  
+  }
 
   .slc-items-start {
     align-items: flex-start;
@@ -128,5 +130,18 @@
 
   .slc-no-wrap {
     flex-wrap: nowrap;
+  }
+}
+
+@each $breakpoint, $value in $slc-grid-breakpoints {
+  $infix: breakpoint-infix($breakpoint, $slc-grid-breakpoints);
+
+  @if ($infix != '') {
+    @media only screen and (max-width: $value) {
+      .slc#{$infix}-stack {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
   }
 }
