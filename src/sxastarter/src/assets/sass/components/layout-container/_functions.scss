@@ -4,7 +4,7 @@
 //    >> breakpoint-min(sm, (xs: 0, sm: 370px, md: 768px, lg: 1024px, xl: 1280px, xxl: 1536px))
 //    576px
 
-@function breakpoint-min($name, $breakpoints: $slc-grid-breakpoints) {
+@function breakpoint-min($name, $breakpoints: $xmc-grid-breakpoints) {
   $min: map-get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
@@ -16,6 +16,6 @@
 //    ""  (Returns a blank string)
 //    >> breakpoint-infix(sm, (xs: 0, sm: 370px, md: 768px, lg: 1024px, xl: 1280px, xxl: 1536px))
 //    "-sm"
-@function breakpoint-infix($name, $breakpoints: $slc-grid-breakpoints) {
+@function breakpoint-infix($name, $breakpoints: $xmc-grid-breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
 }
