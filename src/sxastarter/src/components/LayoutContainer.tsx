@@ -10,7 +10,7 @@ interface ComponentProps {
   params: ComponentParams;
 }
 
-const prefix = 'slc';
+const prefix = 'xmc';
 
 export function parseInlineStyles(styles: string | undefined): Record<string, string> {
   const stylePairs = styles?.split(';') ?? [];
@@ -42,7 +42,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   }
 
   if (enabledColumns === 1 && !columnSizes[0]) {
-    columnSizes[0] = 'slc-basis-full';
+    columnSizes[0] = 'xmc-basis-full';
   }
 
   const id = props.params.RenderingIdentifier;
@@ -57,10 +57,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
   }
 
   return (
-    <div style={{ width: '100%' }} className="slc-layout-container-wrapper">
+    <div style={{ width: '100%' }} className="xmc-layout-container-wrapper">
       <div
         style={containerStyles}
-        className={`slc-layout-container ${columnStackClass}`}
+        className={`xmc-layout-container ${columnStackClass}`}
         id={id ? id : undefined}
       >
         {enabledColIndexes.map((index) => {
@@ -72,8 +72,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
             .join(' ');
 
           return (
-            <div key={index + 1} className={`${columnClass} slc-layout-column`}>
-              <div key={index + 1} className={`slc-layout-column-content ${columnStyle}`}>
+            <div key={index + 1} className={`${columnClass} xmc-layout-column`}>
+              <div key={index + 1} className={`xmc-layout-column-content ${columnStyle}`}>
                 <Placeholder key={index} name={phKey} rendering={props.rendering} />
               </div>
             </div>

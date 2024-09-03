@@ -1,144 +1,144 @@
 @import '_variables.scss';
 @import '_functions.scss';
 
-.slc-layout-container-wrapper {
+.xmc-layout-container-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.slc-layout-container {
+.xmc-layout-container {
   display: flex;
 
-  .slc-layout-column {
+  .xmc-layout-column {
     flex-grow: 0;
     flex-shrink: 1;
   }
 
-  .slc-basis-full {
+  .xmc-basis-full {
     flex-basis: 100%;
   }
 
-  .slc-basis-1-2 {
+  .xmc-basis-1-2 {
     flex-basis: 50%;
   }
 
-  .slc-basis-1-3 {
+  .xmc-basis-1-3 {
     flex-basis: 33.333333%;
   }
 
-  .slc-basis-2-3 {
+  .xmc-basis-2-3 {
     flex-basis: 66.666667%;
   }
 
-  .slc-basis-1-4 {
+  .xmc-basis-1-4 {
     flex-basis: 25%;
     width: 25%;
   }
 
-  .slc-basis-2-4 {
+  .xmc-basis-2-4 {
     flex-basis: 50%;
   }
 
-  .slc-basis-3-4 {
+  .xmc-basis-3-4 {
     flex-basis: 75%;
   }
 
-  .slc-basis-1-5 {
+  .xmc-basis-1-5 {
     flex-basis: 20%;
   }
 
-  .slc-basis-2-5 {
+  .xmc-basis-2-5 {
     flex-basis: 40%;
   }
 
-  .slc-basis-3-5 {
+  .xmc-basis-3-5 {
     flex-basis: 60%;
   }
 
-  .slc-basis-4-5 {
+  .xmc-basis-4-5 {
     flex-basis: 80%;
   }
 
-  .slc-basis-1-6 {
+  .xmc-basis-1-6 {
     flex-basis: 16.666667%;
   }
 
-  .slc-basis-2-6 {
+  .xmc-basis-2-6 {
     flex-basis: 33.333333%;
   }
 
-  .slc-basis-3-6 {
+  .xmc-basis-3-6 {
     flex-basis: 50%;
   }
 
-  .slc-basis-4-6 {
+  .xmc-basis-4-6 {
     flex-basis: 66.666667%;
   }
 
-  .slc-basis-5-6 {
+  .xmc-basis-5-6 {
     flex-basis: 83.333333%;
   }
 
-  .slc-layout-column-content {
+  .xmc-layout-column-content {
     display: flex;
     height: 100%;
   }
 
-  .slc-flex-row {
+  .xmc-flex-row {
     flex-direction: row;
   }
 
-  .slc-flex-col {
+  .xmc-flex-col {
     flex-direction: column;
   }
 
-  .slc-items-start {
+  .xmc-items-start {
     align-items: flex-start;
     align-content: flex-start;
   }
 
-  .slc-items-center {
+  .xmc-items-center {
     align-items: center;
     align-content: center;
   }
 
-  .slc-items-end {
+  .xmc-items-end {
     align-items: flex-end;
     align-content: flex-end;
   }
 
-  .slc-justify-distributed {
+  .xmc-justify-distributed {
     justify-content: space-between;
   }
 
-  .slc-justify-start {
+  .xmc-justify-start {
     justify-content: flex-start;
   }
 
-  .slc-justify-center {
+  .xmc-justify-center {
     justify-content: center;
   }
 
-  .slc-justify-end {
+  .xmc-justify-end {
     justify-content: flex-end;
   }
 
-  .slc-wrap {
+  .xmc-wrap {
     flex-wrap: wrap;
   }
 
-  .slc-no-wrap {
+  .xmc-no-wrap {
     flex-wrap: nowrap;
   }
 }
 
-@each $breakpoint, $value in $slc-grid-breakpoints {
-  $infix: breakpoint-infix($breakpoint, $slc-grid-breakpoints);
+@each $breakpoint, $value in $xmc-grid-breakpoints {
+  $infix: breakpoint-infix($breakpoint, $xmc-grid-breakpoints);
 
   @if ($infix != '') {
     @media only screen and (max-width: $value) {
-      .slc#{$infix}-stack {
+      .xmc#{$infix}-stack {
         flex-direction: column;
         align-items: stretch;
       }
