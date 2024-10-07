@@ -36,8 +36,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   const columnStyles = enabledColIndexes.map((i) => props.params[`ColumnStyle${i + 1}`]);
 
-  if (!columnStyles[0]?.includes('no-wrap') && !columnStyles[0]?.includes('wrap')) {
-    columnStyles[0] = columnStyles[0] ? `${columnStyles[0]} wrap` : 'wrap';
+  if (!/(flex-col|flex-row)/.test(columnStyles[0])) {
+    columnStyles[0] = columnStyles[0] ? `${columnStyles[0]} flex-col` : 'flex-col';
   }
 
   const containerStyles = parseInlineStyles(props.params.ContainerStyles);
